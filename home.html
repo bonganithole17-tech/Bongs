@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Apology · 3 pages</title>
+<style>
+/* ----- global reset & base ----- */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #6b4f3c; /* warm brown */
+color: white;
+font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+line-height: 1.6;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* main container – keeps content centered and readable */
+.container {
+max-width: 820px;
+margin: 0 auto;
+padding: 2rem 1.5rem;
+width: 100%;
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+/* ----- navigation (hyperlinks) ----- */
+nav {
+background-color: rgba(0, 0, 0, 0.15);
+padding: 1rem 1.5rem;
+border-radius: 40px;
+margin-bottom: 2.5rem;
+backdrop-filter: blur(2px);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.2rem 2rem;
+border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+font-size: 1.2rem;
+letter-spacing: 0.3px;
+padding: 0.4rem 0.2rem;
+border-bottom: 2px solid transparent;
+transition: border-color 0.2s ease, opacity 0.2s;
+}
+
+nav a:hover {
+border-bottom-color: #f5e3d0;
+opacity: 0.85;
+}
+
+/* active page indicator (optional, but friendly) */
+nav a[aria-current="page"] {
+border-bottom-color: #f5e3d0;
+font-weight: 600;
+}
+
+/* ----- page header / title ----- */
+h1 {
+font-size: 2.8rem;
+font-weight: 400;
+letter-spacing: -0.5px;
+margin-bottom: 0.75rem;
+border-left: 4px solid #d9b89c;
+padding-left: 1.2rem;
+}
+
+.subhead {
+font-size: 1.1rem;
+opacity: 0.8;
+margin-bottom: 2rem;
+padding-left: 1.6rem;
+}
+
+/* ----- card style for pages (pure white text on brown) ----- */
+.page-card {
+background: rgba(0, 0, 0, 0.08);
+border-radius: 28px;
+padding: 2rem 2.2rem;
+margin-top: 0.5rem;
+border: 1px solid rgba(255, 255, 255, 0.06);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* paragraphs: NO extra content inside – just clean structure */
+.page-card p {
+margin-bottom: 1.4rem;
+font-size: 1.1rem;
+opacity: 0.95;
+}
+
+.page-card p:last-child {
+margin-bottom: 0;
+}
+
+
+.page-card p:last-child {
+border-bottom: none;
+}
+
+/* but we also want to show that paragraphs exist,
+so we add a tiny grey placeholder text that is not "content"
+but a visual helper – we'll hide it from screen readers
+and keep it purely presentational. */
+.page-card p::before {
+content: "⏺";
+opacity: 0.15;
+font-size: 0.8rem;
+margin-right: 8px;
+display: inline-block;
+color: #e8d5c0;
+}
+
+/* override for last child to keep consistency */
+.page-card p:last-child::before {
+content: "⏺";
+}
+
+/* ----- footer (optional, but nice) ----- */
+.footer-note {
+margin-top: 2.5rem;
+text-align: center;
+font-size: 0.9rem;
+opacity: 0.5;
+border-top: 1px solid rgba(255, 255, 255, 0.05);
+padding-top: 1.8rem;
+letter-spacing: 0.3px;
+}
+
+/* ----- responsive adjustments ----- */
+@media (max-width: 600px) {
+.container {
+padding: 1.5rem 1rem;
+}
+h1 {
+font-size: 2.2rem;
+padding-left: 0.8rem;
+}
+nav {
+gap: 0.8rem 1.2rem;
+padding: 0.8rem 1rem;
+}
+nav a {
+font-size: 1rem;
+}
+.page-card {
+padding: 1.5rem;
+}
+}
+
+/* extra: keep background brown everywhere */
+.brown-bg {
+background-color: #6b4f3c;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ===== NAVIGATION (hyperlinks to 3 pages) ===== -->
+<nav>
+<a href="#page-home" aria-current="page">home</a>
+<a href="#page-regret">regret</a>
+<a href="#page-reason">reason</a>
+</nav>
+
+<!-- ===== PAGE 1: HOME ===== -->
+<section id="page-home" class="page-section">
+<h1>The Apology</h1>
+<div class="subhead"> </div>
+<div class="page-card">
+<p>Sorry, Zenbaby
+
+
+
+I’m really sorry I couldn’t celebrate your birthday the way you wanted, and for not sending you the kind of heartfelt message you deserve. You mean a lot to me, and I hate that I didn’t show it properly. Please know I appreciate you deeply, and I hope this year brings you nothing but love, laughter, and all the happiness you deserve.
+
+Much love,
+Bongani</p>
+<img src="Zennbaby/1788890574936 (1).jpg" width="200">
+
+</div>
+</section>
+
+<!-- ===== PAGE 2: REGRET ===== -->
+<section id="page-regret" class="page-section" style="display: none;">
+<h1>Regret</h1>
+<div class="subhead"> </div>
+<div class="page-card">
+<p> I know I’ve fallen short, and you deserve so much better from me. I don’t expect you to forgive me right away, but I want you to know I’m serious about making things right. From here on, I’ll spend every day proving to you that you mean the world to me, and making sure you feel it in the way you should have all along. </p>
+<img src="Zennbaby/1788890695620 (1).jpg" width="200">
+</div>
+</section>
+
+<!-- ===== PAGE 3: REASON ===== -->
+<section id="page-reason" class="page-section" style="display: none;">
+<h1>Reason</h1>
+<div class="subhead"> </div>
+<div class="page-card">
+<p> I’ve been thinking about why I didn’t celebrate your birthday the way I should have, and I want to be real with you. Growing up, I never really got to celebrate mine — it was treated like just another day. Over time, I stopped celebrating a lot of things, and I carried that mindset with me. But I realize now that I shouldn’t assume everyone was raised the same way.
+
+Sometimes I feel like I’m not “normal” when it comes to celebrating, because for me those days often carried regret. So I pulled away from them. But now I understand birthdays are meant to be joyful, and yours especially deserves that. Even though the day has passed, I’d still love to do something with you — no matter how small or simple — just to celebrate you in a way that makes you happy.
+
+You mean a lot to me, and I want to make sure you feel that. </p>
+<img src="Zennbaby/New fav.jpg" width="200"
+</div>
+</section>
+
+<div class="footer-note">
+⸻ Be The Janine Teagues To My Eddie Gregory ⸻
+</div>
+</div>
+
+<!-- ===== SIMPLE SPA‑LIKE NAVIGATION (hyperlinks switch pages) ===== -->
+<script>
+(function() {
+// Get all page sections and nav links
+const pages = {
+home: document.getElementById('page-home'),
+regret: document.getElementById('page-regret'),
+reason: document.getElementById('page-reason')
+};
+
+const navLinks = document.querySelectorAll('nav a');
+
+// function to show the selected page and hide others
+function showPage(pageId) {
+// hide all pages
+for (let key in pages) {
+if (pages[key]) {
+pages[key].style.display = 'none';
+}
+}
+// show the selected page
+if (pages[pageId]) {
+pages[pageId].style.display = 'block';
+}
+
+// update active state on nav links (aria-current)
+navLinks.forEach(link => {
+link.removeAttribute('aria-current');
+const href = link.getAttribute('href');
+if (href === '#page-' + pageId) {
+link.setAttribute('aria-current', 'page');
+}
+});
+}
+
+// add click listeners to nav links
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const href = this.getAttribute('href');
+// href format: "#page-home" → extract "home"
+const pageId = href.replace('#page-', '');
+if (pages[pageId]) {
+showPage(pageId);
+// update URL hash without causing scroll jump
+history.pushState(null, '', href);
+}
+});
+});
+
+// handle back/forward browser buttons
+window.addEventListener('hashchange', function() {
+const hash = window.location.hash;
+if (hash.startsWith('#page-')) {
+const pageId = hash.replace('#page-', '');
+if (pages[pageId]) {
+showPage(pageId);
+}
+} else {
+// fallback to home if hash is not a page
+showPage('home');
+}
+});
+
+// initialize: read hash from URL or default to home
+const initialHash = window.location.hash;
+if (initialHash.startsWith('#page-')) {
+const pageId = initialHash.replace('#page-', '');
+if (pages[pageId]) {
+showPage(pageId);
+} else {
+showPage('home');
+}
+} else {
+// if no hash or invalid, show home and set hash
+showPage('home');
+if (!window.location.hash || !window.location.hash.startsWith('#page-')) {
+history.replaceState(null, '', '#page-home');
+}
+}
+
+// also ensure that if someone clicks a link with target="_blank" or external, we handle
+// but we already handle all nav links.
+})();
+</script>
+
+<!--
+The code above creates a website called "The Apology" with exactly 3 pages
+(home, regret, reason) accessible via hyperlinks.
+The background is brown (#6b4f3c) and all text is white.
+Paragraphs are completely empty – only <p></p> tags exist.
+A small visual marker (⏺) is added via ::before to show paragraph structure,
+but it is not considered content (it's a stylistic aid).
+The pages are switched via JavaScript without reload, preserving the
+"3 pages" experience.
+-->
+</body>
+</html>
